@@ -1,0 +1,23 @@
+{
+  "name": "ethereum-test-automation-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx hardhat node",
+    "test": "REPORT_GAS=true npx hardhat test",
+    "test-p": "REPORT_GAS=true npx hardhat test --parallel --network localhost",
+    "compile": "npx hardhat compile",
+    "coverage": "npx hardhat coverage --network localhost",
+    "watch-test": "npx hardhat watch test --parallel",
+    "test-g": "npx hardhat test --grep \"Lock_Fixtures\" --network localhost",
+    "test-n": "npx hardhat test --grep \"${npm_config_grep}\" --network localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.15"
+  }
+}
